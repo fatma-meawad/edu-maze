@@ -48,23 +48,41 @@ graphics.py:36:0: R0903: Too few public methods (1/2) (too-few-public-methods)
 
 ## ************* Module maze
 maze.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+
 maze.py:6:0: C0115: Missing class docstring (missing-class-docstring)
+
 maze.py:6:0: R0902: Too many instance attributes (8/7) (too-many-instance-attributes)
+
 maze.py:9:8: C0103: Argument name "x1" doesn't conform to snake_case naming style (invalid-name)
+
 maze.py:10:8: C0103: Argument name "y1" doesn't conform to snake_case naming style (invalid-name)
+
 maze.py:7:4: R0913: Too many arguments (9/5) (too-many-arguments)
+
 maze.py:47:8: C0103: Variable name "x1" doesn't conform to snake_case naming style (invalid-name)
+
 maze.py:48:8: C0103: Variable name "y1" doesn't conform to snake_case naming style (invalid-name)
+
 maze.py:49:8: C0103: Variable name "x2" doesn't conform to snake_case naming style (invalid-name)
+
 maze.py:50:8: C0103: Variable name "y2" doesn't conform to snake_case naming style (invalid-name)
+
 maze.py:146:12: R1705: Unnecessary "else" after "return", remove the "else" and de-indent the code inside it (no-else-return)
+
 maze.py:158:12: R1705: Unnecessary "else" after "return", remove the "else" and de-indent the code inside it (no-else-return)
+
 maze.py:170:12: R1705: Unnecessary "else" after "return", remove the "else" and de-indent the code inside it (no-else-return)
+
 maze.py:182:12: R1705: Unnecessary "else" after "return", remove the "else" and de-indent the code inside it (no-else-return)
+
 maze.py:129:4: R0912: Too many branches (13/12) (too-many-branches)
+
 maze.py:191:4: C0116: Missing function or method docstring (missing-function-docstring)
+
 maze.py:6:0: R0903: Too few public methods (1/2) (too-few-public-methods)
+
 maze.py:2:0: C0411: standard import "import random" should be placed before "from cell import Cell" (wrong-import-order)
+
 maze.py:3:0: C0411: standard import "import time" should be placed before "from cell import Cell" (wrong-import-order)
 
 ## Module main
