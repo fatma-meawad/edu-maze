@@ -137,6 +137,13 @@ class Maze:
             return True
 
         # move left if there is no wall and it hasn't been visited
+
+        # CODE REVIEW:
+        #extract to booleans insted of relying on comment:
+        #is_left_wall = self._cells[i][j].has_left_wall
+        #is_left_cell_visited = self._cells[i - 1][j].visited
+        #if i > 0 and not is_left_wall and not is_left_cell_visited:
+
         if (
             i > 0
             and not self._cells[i][j].has_left_wall
@@ -149,6 +156,32 @@ class Maze:
                 self._cells[i][j].draw_move(self._cells[i - 1][j], True)
 
         # move right if there is no wall and it hasn't been visited
+
+        # CODE REVIEW:
+        #extract to booleans insted of relying on comment:
+        #is_right_wall = self._cells[i][j].has_right_wall
+        #is_right_cell_visited = self._cells[i + 1][j].visited
+        #if i < self._num_cols - 1 and not is_right_wall and not is_right_cell_visited:
+
+        # the logic inside the if statement is very repetitive
+        # can you think of a way to make it more DRY?
+        # for example:
+        # if i < self._num_cols - 1 and not self._cells[i][j].has_right_wall and not self._cells[i + 1][j].visited:
+        #     next_cell = self._cells[i + 1][j]
+        # elif j > 0 and not self._cells[i][j].has_top_wall and not self._cells[i][j - 1].visited:
+        #     next_cell = self._cells[i][j - 1]
+        # elif j < self._num_rows - 1 and not self._cells[i][j].has_bottom_wall and not self._cells[i][j + 1].visited:
+        #     next_cell = self._cells[i][j + 1]
+        # else:
+        #   return False
+        # self._cells[i][j].draw_move(next_cell)
+        # if self._solve_r(next_cell.i, next_cell.j):
+        #     return True
+        # self._cells[i][j].draw_move(next_cell, True)
+
+        
+
+
         if (
             i < self._num_cols - 1
             and not self._cells[i][j].has_right_wall
