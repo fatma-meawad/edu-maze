@@ -13,7 +13,7 @@ def main():
         screen_x = int(float(input("Screen-size in x-direction:")))
         screen_y = int(float(input("Screen-size in y-direction:")))
     except:
-        print("Please enter a whole number and not a letter/symbol!")
+        print("Please enter a number and not a letter/symbol!")
         return
 
     cell_size_x = (screen_x - 2 * margin) / num_cols
