@@ -4,11 +4,18 @@ import sys
 
 
 def main():
-    num_rows = 12
-    num_cols = 16
-    margin = 50
-    screen_x = 800
-    screen_y = 600
+    
+    print("Please enter specifications for your maze.")
+    try:
+        num_rows = int(float(input("Number of rows:")))
+        num_cols = int(float(input("Number of columns:")))
+        margin = int(float(input("Margin size between the maze and the window:")))
+        screen_x = int(float(input("Screen-size in x-direction:")))
+        screen_y = int(float(input("Screen-size in y-direction:")))
+    except:
+        print("Please enter a whole number and not a letter/symbol!")
+        return
+
     cell_size_x = (screen_x - 2 * margin) / num_cols
     cell_size_y = (screen_y - 2 * margin) / num_rows
 
