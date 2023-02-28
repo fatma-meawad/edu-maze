@@ -181,8 +181,7 @@ class Maze:
             self._cells[i][j].draw_move(self._cells[i][j + 1])
             if self._solve_r(i, j + 1):
                 return True
-            else:
-                self._cells[i][j].draw_move(self._cells[i][j + 1], True)
+            self._cells[i][j].draw_move(self._cells[i][j + 1], True)
 
         # we went the wrong way let the previous cell know by returning False
         return False
